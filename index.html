@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="query.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="bg full" id="bg-image-top"></div>
+    <div class="bg full" id="bg-image-bottom"></div>
+    <div class="full flex-column align-center justify-center">
+      <h2 id="label" class="font-md clr-regular marg">Our Pricing</h2>
+      <div id="switch" class="marg-tb flex flex-row align-center">
+        <p id="annually-label" class="font-sm clr-light marg-lr toggled">Annually</p>
+        <div id="toggle-box" class="gradient marg-lr flex-row align-center justify-center">
+          <div id="toggle" class="bg-white toggle-annually"></div>
+        </div>
+        <p id="monthly-label" class="font-sm clr-light marg-lr">Monthly</p>
+      </div>
+      <div id="plans" class="flex-row align-center justify-center marg-tb">
+        <div id="basic" class="plan-side clr-regular bg-white flex-column align-center justify-center">
+          <p class="font-sm">Basic</p>
+          <h1 class="tight price-annually font-lg"><span class="sub">$</span>199.99</h1>
+          <h1 class="tight price-monthly font-lg"><span class="sub">$</span>19.99</h1>
+          <div class="dark-line"></div>
+          <p class="font-sm">500 GB Storage</p>
+          <div class="dark-line"></div>
+          <p class="font-sm">2 Users Allowed</p>
+          <div class="dark-line"></div>
+          <p class="font-sm">Send up to 3 GB</p>
+          <div class="dark-line btm-margin"></div>
+          <button class="btn-dark btm">Learn More</button>
+        </div>
+        <div id="pro" class="plan-mid gradient clr-white flex-column align-center justify-center">
+          <p class="font-sm">Professional</p>
+          <h1 class="tight price-annually font-lg"><span class="sub">$</span>249.99</h1>
+          <h1 class="tight price-monthly font-lg"><span class="sub">$</span>24.99</h1>
+          <div class="white-line"></div>
+          <p class="font-sm">1 TB Storage</p>
+          <div class="white-line"></div>
+          <p class="font-sm">5 Users Allowed</p>
+          <div class="white-line"></div>
+          <p class="font-sm">Send up to 10 GB</p>
+          <div class="white-line btm-margin"></div>
+          <button class="btn-light btm">Learn More</button>
+        </div>
+        <div id="master" class="plan-side clr-regular bg-white flex-column align-center justify-center">
+          <p class="font-sm">Master</p>
+          <h1 class="tight price-annually font-lg"><span class="sub">$</span>399.99</h1>
+          <h1 class="tight price-monthly font-lg"><span class="sub">$</span>39.99</h1>
+          <div class="dark-line"></div>
+          <p class="font-sm">2 TB Storage</p>
+          <div class="dark-line"></div>
+          <p class="font-sm">10 Users Allowed</p>
+          <div class="dark-line"></div>
+          <p class="font-sm">Send up to 20 GB</p>
+          <div class="dark-line btm-margin"></div>
+          <button class="btn-dark btm">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+/*STATICS*/
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(240, 78%, 98%);
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+p {
+  margin: 20px 0px;
+}
+button {
+  width: 250px;
+  height: 40px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+/*CLASSES*/
+.pad {
+  padding: 10% 20%;
+}
+.bg {
+  position: absolute;
+  z-index: 1;
+}
+.full {
+  height: 100vh;
+  width: 100vw;
+}
+.flex-row {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.font-lg {
+  font-size: 64px;
+}
+.font-md {
+  font-size: 32px;
+}
+.font-sm {
+  font-size: 15px;
+}
+.gradient {
+  background-image: linear-gradient(to bottom right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+.clr-very-light {
+  color: hsl(240, 78%, 98%);
+}
+.clr-light {
+  color: hsl(234, 14%, 74%);
+}
+.clr-regular {
+  color: hsl(233, 13%, 49%);
+}
+.clr-dark {
+  color: hsl(232, 13%, 33%);
+}
+.clr-white {
+  color: white;
+}
+.clr-gradient {
+  color: hsl(237, 63%, 64%);
+}
+.btn-light {
+  background-color: white;
+  color: hsl(237, 63%, 64%);
+}
+.btn-light:hover {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.btn-dark {
+  background-image: linear-gradient(to bottom right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+  color: white;
+}
+.btn-dark:hover {
+  border: 1px solid hsl(237, 63%, 64%);
+  background-image: linear-gradient(white,white);
+  color: hsl(237, 63%, 64%);
+}
+.bg-very-light {
+  background-color: hsl(240, 78%, 98%);
+}
+.bg-light {
+  background-color: hsl(234, 14%, 74%);
+}
+.bg-regular {
+  background-color: hsl(233, 13%, 49%);
+}
+.bg-dark {
+  background-color: hsl(232, 13%, 33%);
+}
+.bg-white {
+  background-color: white;
+}
+.marg-tb {
+  margin: 20px 0px;
+}
+.btm-margin {
+  margin-bottom: 40px;
+}
+.btm {
+  margin-bottom: 20px;
+}
+.marg-lr {
+  margin: 0px 15px;
+}
+.dark-line {
+  height: 1px;
+  width: 250px;
+  background-color: hsla(234, 14%, 74%,.5);
+}
+.white-line {
+  height: 1px;
+  width: 250px;
+  background-color: rgba(255,255,255,.5);
+}
+.sub {
+  font-size: 40px;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+.tight {
+  letter-spacing: -.1px;
+}
+/*BACKGROUND*/
+#bg-image-top {
+  background-image: url("images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+#bg-image-bottom {
+  background-image: url("images/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+/*TOGGLER*/
+#switch, #label {
+  position: relative;
+  z-index: 2;
+}
+#toggle-box {
+  position: relative;
+  height: 30px;
+  width: 60px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#toggle-box:hover {
+  opacity: .7;
+}
+#toggle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  transition: transform .3s;
+}
+.toggle-monthly {
+  transform: translateX(15px);
+}
+.toggle-annually {
+  transform: translateX(-15px);
+}
+.toggled {
+  color: hsl(232, 13%, 33%);
+}
+/*PLANS*/
+#plans {
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+  height: 550px;
+}
+.plan-mid {
+  height: 525px;
+  width: 360px;
+  position: relative;
+  z-index: 3;
+  box-shadow: 3px 3px 20px hsla(234, 14%, 74%,.5), -3px -3px 20px hsla(234, 14%, 74%,.5);
+}
+.plan-side {
+  height: 475px;
+  width: 330px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 3px 3px 20px hsla(234, 14%, 74%,.2), -3px -3px 20px hsla(234, 14%, 74%,.2);
+}
+#basic {
+  border-radius: 10px 0px 0px 10px;
+}
+#pro {
+  border-radius: 10px;
+}
+#master {
+  border-radius: 0px 10px 10px 0px;
+}
+.price-annually {
+  display: block;
+}
+.price-monthly {
+  display: none;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1024px) {
+  .font-lg {
+    font-size: 48px;
+  }
+  .white-line {
+    width: 150px;
+  }
+  .dark-line {
+    width: 150px
+  }
+  .sub {
+    font-size: 24px;
+  }
+  button {
+    width: 150px;
+  }
+  .plan-mid {
+    height: 400px;
+    width: 300px;
+  }
+  .plan-side {
+    height: 360px;
+    width: 250px;
+  }
+  p {
+    margin: 10px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .plan-mid {
+    height: 400px;
+    width: 300px;
+    z-index: 2
+  }
+  .plan-side {
+    height: 400px;
+    width: 300px;
+  }
+  #pro {
+    margin-bottom: 30px;
+  }
+  #basic {
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  #master {
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  #plans {
+    flex-direction: column;
+    height: 1300px;
+  }
+  .full {
+    width: 100vw;
+    height: 1500px;
+  }
+}
